@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    <!-- Greeting -->
+    <category>
+      <pattern>HELLO</pattern>
+      
+      <template>
+        Hello!  I am your career advice chatbot, Sage!  How can I help you?
+        
+        <button><text>Career Advice</text><postback>Career Advice</postback></button>
+        <button><text>Nothing right now</text><postback>Goodbye</postback></button>
+      </template>
+    </category>
+    
+    
+    <!-- Career Path -->
+    
+    <category>
+      <pattern>CAREER ADVICE</pattern>
+      
+      <template>
+        What are you interested in?
+        
+        <button><text>I like coding</text><postback>I like coding</postback></button>
+        <button><text>I like working with data</text><postback>I like working with data</postback></button>
+        <button><text>I like solving security problems</text><postback>I like solving security problems</postback></button>
+        <button><text>I enjoy creating games</text><postback>I enjoy creating games</postback></button>
+        <button><text>I like managing projects</text><postback>I like managing projects</postback></button>
+      </template>
+      
+    </category>
+    
+    <category>
+        <pattern>I LIKE CODING</pattern>
+        <template>
+            You may be interested in exploring a career as a Software Engineer.  Software Engineers design, develop, and test various applications.
+            Would you like to know more?
+            <button><text>Yes</text><postback>Software Engineer</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+            <button><text>Something else</text><postback>Career Advice</postback></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE WORKING WITH DATA</pattern>
+        <template>
+            You may be interested in a career as a Data Scientist. Data Scientists analyze and interpret complex datasets to determine trends and drive decisions.
+            Would you like to know more?
+            <button><text>Yes</text><postback>Data Scientist</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+            <button><text>Something else</text><postback>Career Advice</postback></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE SOLVING SECURITY PROBLEMS</pattern>
+        <template>
+            You may enjoy being a Cybersecurity Analyst. Cybersecurity Analysts protect systems from cyber threats.
+            Would you like to know more?
+            <button><text>Yes</text><postback>Cybersecurity Analyst</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+            <button><text>Something else</text><postback>Career Advice</postback></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE CREATING GAMES</pattern>
+        <template>
+            You may want to explore a career as a Game Developer. Game Developers use programming and design skills to build interactive experiences.
+            Would you like to know more?
+            <button><text>Yes</text><postback>Game Developer</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+            <button><text>Something else</text><postback>Career Advice</postback></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE MANAGING PROJECTS</pattern>
+        <template>
+            A Project Manager role in tech might be a great fit. Tech Project Managers coordinate teams to deliver successful projects.
+            Would you like to know more?
+            <button><text>Yes</text><postback>Project Manager</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+            <button><text>Something else</text><postback>Career Advice</postback></button>
+        </template>
+    </category>
+    
+    
+    <!-- Career Details -->
+    
+    <category>
+        <pattern>SOFTWARE ENGINEER</pattern>
+        <template>
+            A software engineer designs and develops applications, websites, mobile apps, and various enterprise systems.
+            They often use programming languages like Python, Java, or C++ to solve business problems and create user-friendly solutions.
+            <button><text>Start Over?</text><postback>Career Advice</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA SCIENTIST</pattern>
+        <template>
+            A data scientist collects various large datasets and interprets them to identify trends and discover patterns.
+            Data scientists often use programming languages like Python and SQL to manage statistics and machine learning to help make business decisions and improve industry processes.
+            <button><text>Start Over?</text><postback>Career Advice</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CYBERSECURITY ANALYST</pattern>
+        <template>
+            A security analyst protects computer systems and networks from various cyber threats by monitoring systems, analyzing vulnerabilities and risks, and responding to incidents.
+            Cybersecurity analysts work with various security tools and handle ethical usage of data and computer systems.
+            <button><text>Start Over?</text><postback>Career Advice</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GAME DEVELOPER</pattern>
+        <template>
+            A game developer builds interactive experiences using programming, animation, and creative writing skills.  A game developer works with game engines like Unity or Unreal to
+            design dynamic experiences for players around the world to enjoy across different gaming consoles, PCs, and mobile devices.
+            <button><text>Start Over?</text><postback>Career Advice</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT MANAGER</pattern>
+        <template>
+            A project manager oversees projects from start to finish.  Communicating with various stakeholders, managing budgets, deadlines, and business requirements.
+            A project manager uses leadership and communication skills to coordinate the efficient development of various products.
+            <button><text>Start Over?</text><postback>Career Advice</postback></button>
+            <button><text>No</text><postback>Goodbye</postback></button>
+        </template>
+    </category>
+    
+    
+    <!-- Goodbye -->
+    
+    <category>
+      <pattern>GOODBYE</pattern>
+      
+      <template>
+        Thanks for chatting with me! If you ever need more career advice, just say "hello". Have a great day!
+      </template>
+    </category>
+    
+    
+</aiml> 
