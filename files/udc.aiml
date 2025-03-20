@@ -25,7 +25,7 @@
         <button><text>I like coding</text><postback>I like coding</postback></button>
         <button><text>I like working with data</text><postback>I like working with data</postback></button>
         <button><text>I like solving security problems</text><postback>I like solving security problems</postback></button>
-        <button><text>I enjoy creating games</text><postback>I enjoy creating games</postback></button>
+        <button><text>I like creating games</text><postback>I like creating games</postback></button>
         <button><text>I like managing projects</text><postback>I like managing projects</postback></button>
       </template>
       
@@ -149,6 +149,18 @@
         Thanks for chatting with me! If you ever need more career advice, just say "hello". Have a great day!
       </template>
     </category>
+    
+    
+    <!-- Catchall -->
+    <category>
+      <pattern>*</pattern>
+      
+      <template>
+        Sorry, I don't understand that.  Try saying "Hello" or pressing a button!
+        
+      </template>
+    </category>
+    
     
     
 </aiml> 
